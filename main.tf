@@ -7,7 +7,6 @@ resource "aws_s3_bucket" "s3_bucket" {
   }
   policy = "${template_file.s3_policy.rendered}"
   lifecycle_rule "${template_file.s3_lifecycle_rule.rendered}"
-  }
   tags {
     Name = "${var.bucket}"
     Owner = "${var.owner}"
