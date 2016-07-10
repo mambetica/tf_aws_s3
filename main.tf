@@ -1,7 +1,7 @@
 resource "aws_s3_bucket" "s3_bucket" {
   bucket = "${var.bucket}"
   acl = "${var.acl}"
-  force_destroy = "${var.force_destroy}
+  force_destroy = "${var.force_destroy}"
   versioning {
     enabled = "${var.versioning}"
   }
