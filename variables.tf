@@ -23,5 +23,5 @@ variable "policy_file" {
 }
 variable "lifecycle_rule_file" {
   description = "Lifecycle rule file to provide the lifecycle rules for the bucket"
-  default = "{}"
+  default = ""
 }
