@@ -25,3 +25,11 @@ variable "lifecycle_rule_file" {
   description = "Lifecycle rule file to provide the lifecycle rules for the bucket"
   default = ""
 }
+variable "logging_target_bucket" {
+  description = "The name of the bucket that will receive the log objects"
+  default = ""
+}
+variable "logging_target_prefix" {
+  description = "To specify a key prefix for log objects"
+  default = ""
+}
