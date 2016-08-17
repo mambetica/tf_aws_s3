@@ -14,4 +14,7 @@ resource "aws_s3_bucket" "s3_bucket" {
 
 data "template_file" "s3_policy" {
   template = "${file("${var.policy_file}")}"
+  vars {
+    policy_principal_list = "${var.policy_principal_list}"
+  }
 }
