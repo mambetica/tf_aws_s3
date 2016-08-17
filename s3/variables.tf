@@ -23,6 +23,6 @@ variable "policy_file" {
 }
 variable "policy_principal_list"
   description = "A list of principals to apply to the bucket policy"
-  type = "List"
+  type = "list"
   default = []
 }
